@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>点餐小程序</title>
+    <link rel="stylesheet" href="chatgpt.css">
+</head>
+
+<body>
+    <h1>点餐小程序</h1>
+
+    <form action="submit_order.php" method="POST">
+        <fieldset>
+            <legend>请选择菜品</legend>
+            <input type="checkbox" name="dish[]" value="牛肉面">牛肉面<br>
+            <input type="checkbox" name="dish[]" value="炸鸡排">炸鸡排<br>
+            <input type="checkbox" name="dish[]" value="鱼香肉丝">鱼香肉丝<br>
+        </fieldset>
+
+        <fieldset>
+            <legend>请选择饮料</legend>
+            <input type="radio" name="drink" value="可乐">可乐<br>
+            <input type="radio" name="drink" value="雪碧">雪碧<br>
+            <input type="radio" name="drink" value="绿茶">绿茶<br>
+        </fieldset>
+
+        <fieldset>
+            <legend>请填写联系信息</legend>
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="phone">电话：</label>
+            <input type="tel" id="phone" name="phone"><br>
+            <label for="address">地址：</label>
+            <input type="text" id="address" name="address"><br>
+        </fieldset>
+
+        <input type="submit" value="提交订单">
+    </form>
+</body>
+
+</html>
